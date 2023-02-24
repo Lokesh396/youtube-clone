@@ -8,36 +8,98 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/sidebar.css">
   </head>
   <body>
     <div class="header">
       <div class="left-section">
-        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="menu">
-        <img class="youtube-logo" src="icons/youtube-logo.svg" alt="youtube-logo">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="menu" />
+        <img
+          class="youtube-logo"
+          src="icons/youtube-logo.svg"
+          alt="youtube-logo"
+        />
       </div>
       <div class="middle-section">
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-button">
-          <img class="search-icon" src="icons/search.svg" alt="search">
+          <img class="search-icon" src="icons/search.svg" alt="search" />
+          <div class="tooltip">
+            Search
+          </div>
         </button>
         <button class="voice-search-button">
-          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="mic">
+          <img
+            class="voice-search-icon"
+            src="icons/voice-search-icon.svg"
+            alt="mic"
+          />
+          <div class="tooltip">
+            Search with your voice
+          </div>
         </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="icons/upload.svg" alt="upload">
-        <img class="youtubeapps-icon" src="icons/youtube-apps.svg" alt="apps">
-        <img class="notifications-icon" src="icons/notifications.svg" alt="">
-        <img class="current-user-picture" src="channel-pictures/home-channel.jpg" alt="">
+        <div class="upload-icon-inner">
+          <img class="upload-icon" src="icons/upload.svg" alt="upload" />
+          <div class="tooltip">
+            Create
+          </div>
+        </div>
+        <div class="youtubeapps-icon-innner">
+          <img class="youtubeapps-icon" src="icons/youtube-apps.svg" alt="apps" />
+          <div class="tooltip">
+            Youtube Apps
+          </div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" alt="" />
+          <div class="tooltip">
+            Notifications
+          </div>
+          <div class="notifications-count">3</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-pictures/home-channel.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="home">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="explore">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="subscriptions">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="originals">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="youtube-music">
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="library">
+        <div>Library</div>
       </div>
     </div>
     <div class="video-grid">
       <div class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="" />
+         <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"><img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="" /></a>
+          <div class="video-time">14:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -48,10 +110,10 @@
             />
           </div>
           <div class="video-info">
-            <div>
+            <div><a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
               <p class="video-title">
                 Talking Tech and AI with Google CEO Sundar Pichai!
-              </p>
+              </p></a>
               <p class="video-author">Marques Brownlee</p>
 
               <p class="video-stats">3.4M views &middot; 6 months ago</p>
@@ -62,6 +124,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="" />
+          <div class="video-time">8.22</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -84,6 +147,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="" />
+          <div class="video-time">9.13</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -108,6 +172,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="" />
+          <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -132,6 +197,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="" />
+          <div class="video-time">11:17</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -144,8 +210,7 @@
           <div class="video-info">
             <div>
               <p class="video-title">
-                
-Kadane's Algorithm to Maximum Sum Subarray Problem
+                Kadane's Algorithm to Maximum Sum Subarray Problem
               </p>
               <p class="video-author">CS Dojo</p>
 
@@ -157,6 +222,7 @@ Kadane's Algorithm to Maximum Sum Subarray Problem
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="" />
+          <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -169,7 +235,8 @@ Kadane's Algorithm to Maximum Sum Subarray Problem
           <div class="video-info">
             <div>
               <p class="video-title">
-                Anything You Can Fit In The Circle I’ll Pay For</p>
+                Anything You Can Fit In The Circle I’ll Pay For
+              </p>
               <p class="video-author">MrBeast</p>
 
               <p class="video-stats">141M views &middot; 1 year ago</p>
